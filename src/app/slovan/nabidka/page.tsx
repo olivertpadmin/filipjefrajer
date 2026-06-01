@@ -71,9 +71,9 @@ const PRODUCTS = [
 
 const SUMMARY_ROWS = [
   { label: 'Roční obrat přes platformu', value: '20 000 000 Kč', note: 'Předpokládaný obrat v sezóně' },
-  { label: 'Fee platformy',              value: '4,5 %',          note: 'Z celkového obratu vstupenek = 765 000 Kč' },
-  { label: 'Fee z permanentek',          value: '2 %',            note: 'Z obratu permanentek (3 000 000 Kč) = 60 000 Kč' },
-  { label: 'Podpora mládeže (1/3)',      value: '275 000 Kč',     note: 'Dopředu · 3× 10s reklama na banneru na každý zápas' },
+  { label: 'Provize platformy',          value: '4,5 %',          note: 'Z celkového obratu vstupenek = 765 000 Kč' },
+  { label: 'Provize z permanentek',      value: '2 %',            note: 'Z obratu permanentek (3 000 000 Kč) = 60 000 Kč' },
+  { label: 'Podpora mládeže',            value: '275 000 Kč',     note: 'Vyplaceno před sezónou · V rámci partnerství požadujeme 3× 10s spot na LED banneru na zápas' },
   { label: 'Kickback z obratu (0,8 %)', value: '160 000 Kč',     note: 'Vyplaceno po skončení sezóny' },
 ]
 
@@ -297,7 +297,7 @@ export default function NabidkaPage() {
               <p className="text-sm text-white/50 leading-relaxed max-w-lg mb-6">
                 Implementaci ani provoz celého digitálního ekosystému neplatíte dopředu.
                 Vše je pokryto provizí z prodeje vstupenek. Součástí spolupráce je také{' '}
-                <span className="text-white/80 font-semibold">záloha 275 000 Kč na podporu mládeže</span>{' '}
+                <span className="text-white/80 font-semibold">275 000 Kč na podporu mládeže vyplaceno před sezónou</span>{' '}
                 a kickback <span className="text-white/80 font-semibold">160 000 Kč po sezóně</span>{' '}
                 při splnění obratu v sezóně{' '}
                 <span className="text-white/80 font-semibold">20 000 000 Kč</span>.
@@ -306,7 +306,7 @@ export default function NabidkaPage() {
               {/* Výpočtový breakdown */}
               <div className="flex flex-col gap-2">
                 {[
-                  { label: 'Podpora mládeže dopředu (1/3)', value: '+ 275 000 Kč' },
+                  { label: 'Podpora mládeže – vyplaceno před sezónou', value: '+ 275 000 Kč' },
                   { label: 'Kickback z obratu (0,8 %)', value: '+ 160 000 Kč' },
                 ].map((row) => (
                   <div
@@ -335,7 +335,7 @@ export default function NabidkaPage() {
                   }}
                 >
                   <div>
-                    <span className="text-sm font-bold text-white">💰 Celkový příjem pro klub</span>
+                    <span className="text-sm font-bold text-white">🤝 Partnerský budget</span>
                     <p className="text-[10px] text-white/35 mt-0.5">Podpora mládeže + kickback po sezóně</p>
                   </div>
                   <span
@@ -358,7 +358,7 @@ export default function NabidkaPage() {
                 }}
               >
                 <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/40 mb-2">
-                  Čistý dopad TP
+                  Finální provize PLG
                 </div>
                 <div
                   className="text-6xl md:text-7xl font-black leading-none"
@@ -369,24 +369,6 @@ export default function NabidkaPage() {
                 <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/40 mt-2">
                   z obratu vstupenek
                 </div>
-              </div>
-              <div
-                className="rounded-2xl px-6 py-4 text-center w-full"
-                style={{
-                  background: `${ACCENT}10`,
-                  border: `1px solid ${ACCENT}30`,
-                }}
-              >
-                <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/35 mb-1">
-                  z toho mládež
-                </div>
-                <div
-                  className="text-2xl font-black leading-none"
-                  style={{ fontFamily: "'Panel Sans', sans-serif", color: ACCENT_LIGHT }}
-                >
-                  1/3
-                </div>
-                <div className="text-[10px] text-white/30 mt-1">275 000 Kč dopředu</div>
               </div>
             </div>
           </div>
