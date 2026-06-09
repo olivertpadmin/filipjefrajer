@@ -71,8 +71,8 @@ const PRODUCTS = [
 
 const SUMMARY_ROWS = [
   { label: 'Roční obrat přes platformu', value: '20 000 000 Kč', note: 'Předpokládaný obrat v sezóně' },
-  { label: 'Provize platformy',          value: '4,5 %',          note: 'Z celkového obratu vstupenek = 765 000 Kč' },
-  { label: 'Provize z permanentek',      value: '2 %',            note: 'Z obratu permanentek (3 000 000 Kč) = 60 000 Kč' },
+  { label: 'Provize platformy',          value: '4,5 %',          note: '' },
+  { label: 'Provize z permanentek',      value: '2 %',            note: '' },
   { label: 'Podpora mládeže',            value: '275 000 Kč',     note: 'Vyplaceno před sezónou · V rámci partnerství požadujeme 3× 10s spot na LED banneru na zápas' },
   { label: 'Kickback z obratu (0,8 %)', value: '160 000 Kč',     note: 'Vyplaceno po skončení sezóny' },
 ]
